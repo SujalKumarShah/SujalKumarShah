@@ -67,7 +67,7 @@ npm run start -- --hostname 127.0.0.1 --port 3100
 npm run verify:agents
 ```
 
-Set `PORTFOLIO_CHECK_URL=https://sujalkumarshah.com` for deployed HTTP checks. Test native tools in a browser supporting WebMCP. Account-level Search Console indexing requests and provider selection remain external steps.
+Set `PORTFOLIO_CHECK_URL=https://sujal-kumar-shah.vercel.app` for deployed HTTP checks. Test native tools in a browser supporting WebMCP. Account-level Search Console indexing requests and provider selection remain external steps.
 
 ## References
 

@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.0",
-  "id": "https://sujalkumarshah.com/#person",
+  "id": "https://sujal-kumar-shah.vercel.app/#person",
   "name": "Sujal Kumar Shah",
-  "url": "https://sujalkumarshah.com",
+  "url": "https://sujal-kumar-shah.vercel.app",
   "githubUsername": "SujalKumarShah",
   "role": "Software Developer & Systems Engineer",
   "description": "Learning and building with modern web applications, data structures, algorithms, Linux systems, and cloud architecture. Open to internships and collaboration.",
@@ -29,30 +29,30 @@
     "codechef": "https://www.codechef.com/users/sujalkumarshah"
   },
   "pages": {
-    "home": "https://sujalkumarshah.com/",
-    "projects": "https://sujalkumarshah.com/projects"
+    "home": "https://sujal-kumar-shah.vercel.app/",
+    "projects": "https://sujal-kumar-shah.vercel.app/projects"
   },
   "sections": {
-    "introduction": "https://sujalkumarshah.com/#hero",
-    "projects": "https://sujalkumarshah.com/#projects",
-    "experience": "https://sujalkumarshah.com/#experience",
-    "skills": "https://sujalkumarshah.com/#skills",
-    "github": "https://sujalkumarshah.com/#github",
-    "about": "https://sujalkumarshah.com/#about",
-    "contact": "https://sujalkumarshah.com/#contact"
+    "introduction": "https://sujal-kumar-shah.vercel.app/#hero",
+    "projects": "https://sujal-kumar-shah.vercel.app/#projects",
+    "experience": "https://sujal-kumar-shah.vercel.app/#experience",
+    "skills": "https://sujal-kumar-shah.vercel.app/#skills",
+    "github": "https://sujal-kumar-shah.vercel.app/#github",
+    "about": "https://sujal-kumar-shah.vercel.app/#about",
+    "contact": "https://sujal-kumar-shah.vercel.app/#contact"
   },
   "resources": {
-    "index": "https://sujalkumarshah.com/llms.txt",
-    "fullGuide": "https://sujalkumarshah.com/llms-full.txt",
-    "homeMarkdown": "https://sujalkumarshah.com/index.md",
-    "projectsMarkdown": "https://sujalkumarshah.com/projects.md",
-    "projectsJSON": "https://sujalkumarshah.com/projects.json",
-    "agentSkill": "https://sujalkumarshah.com/portfolio.skill.md",
-    "agentCatalog": "https://sujalkumarshah.com/.well-known/ai-catalog.json",
-    "sitemap": "https://sujalkumarshah.com/sitemap.xml"
+    "index": "https://sujal-kumar-shah.vercel.app/llms.txt",
+    "fullGuide": "https://sujal-kumar-shah.vercel.app/llms-full.txt",
+    "homeMarkdown": "https://sujal-kumar-shah.vercel.app/index.md",
+    "projectsMarkdown": "https://sujal-kumar-shah.vercel.app/projects.md",
+    "projectsJSON": "https://sujal-kumar-shah.vercel.app/projects.json",
+    "agentSkill": "https://sujal-kumar-shah.vercel.app/portfolio.skill.md",
+    "agentCatalog": "https://sujal-kumar-shah.vercel.app/.well-known/ai-catalog.json",
+    "sitemap": "https://sujal-kumar-shah.vercel.app/sitemap.xml"
   },
   "activity": {
-    "url": "https://sujalkumarshah.com/api/github-activity",
+    "url": "https://sujal-kumar-shah.vercel.app/api/github-activity",
     "calendar": "Personal daily contributions for the past 365 dates through today in Asia/Kolkata, from GitHub's public calendar",
     "repositoryRanking": "All-time commits by all authors and bots on owned public repository default branches, sorted by commit count descending",
     "cacheSeconds": 120,

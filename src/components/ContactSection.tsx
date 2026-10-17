@@ -59,7 +59,7 @@ const columns: FootColumn[] = [
     title: "Project",
     links: [
       { text: "Source code", href: repo },
-      { text: "sujalkumarshah.com", href: "https://sujalkumarshah.com" },
+      { text: "sujal-kumar-shah.vercel.app", href: "https://sujal-kumar-shah.vercel.app" },
     ],
   },
 ];

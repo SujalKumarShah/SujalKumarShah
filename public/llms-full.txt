@@ -2,8 +2,8 @@
 
 > Public developer portfolio of Sujal Kumar Shah, known as SujalKumarShah. Learning and building with modern web applications, data structures, algorithms, Linux systems, and cloud architecture. Open to internships and collaboration.
 
-Canonical page: https://sujalkumarshah.com/
-Public identity: https://sujalkumarshah.com/#person
+Canonical page: https://sujal-kumar-shah.vercel.app/
+Public identity: https://sujal-kumar-shah.vercel.app/#person
 Role stated on the portfolio: Software Developer & Systems Engineer.
 
 ## About and learning
@@ -16,14 +16,14 @@ Availability: Open to internships, collaboration, open-source contributions and 
 
 ## Portfolio navigation
 
-- [Introduction](https://sujalkumarshah.com/#hero)
-- [Projects](https://sujalkumarshah.com/#projects)
-- [Experience](https://sujalkumarshah.com/#experience)
-- [Skills](https://sujalkumarshah.com/#skills)
-- [Github](https://sujalkumarshah.com/#github)
-- [About](https://sujalkumarshah.com/#about)
-- [Contact](https://sujalkumarshah.com/#contact)
-- [All featured project details](https://sujalkumarshah.com/projects): Descriptions, technologies, source repositories and attribution.
+- [Introduction](https://sujal-kumar-shah.vercel.app/#hero)
+- [Projects](https://sujal-kumar-shah.vercel.app/#projects)
+- [Experience](https://sujal-kumar-shah.vercel.app/#experience)
+- [Skills](https://sujal-kumar-shah.vercel.app/#skills)
+- [Github](https://sujal-kumar-shah.vercel.app/#github)
+- [About](https://sujal-kumar-shah.vercel.app/#about)
+- [Contact](https://sujal-kumar-shah.vercel.app/#contact)
+- [All featured project details](https://sujal-kumar-shah.vercel.app/projects): Descriptions, technologies, source repositories and attribution.
 
 These are ordinary links. The main content and project descriptions are present in the initial HTML; reading them does not require animations, hover, sign-in or WebMCP. The original introductory animation is decorative and has a reduced-motion alternative. The project page has category filters; all featured project cards are present in its initial HTML.
 
@@ -43,23 +43,46 @@ Contact context: internships, collaboration, open-source work and technical disc
 
 ## Identity and sources
 
-This page describes the person associated with https://sujalkumarshah.com and GitHub @SujalKumarShah. A shared name in search results does not establish that another profile belongs to this person; use the exact linked accounts to distinguish identities.
+This page describes the person associated with https://sujal-kumar-shah.vercel.app and GitHub @SujalKumarShah. A shared name in search results does not establish that another profile belongs to this person; use the exact linked accounts to distinguish identities.
 These are owner-published portfolio statements, not an independent credential, hiring assessment or skill rating. No employer, degree, award, phone number, address or private repository details are asserted by this guide.
-The HTML portfolio is the primary public presentation. [Profile JSON](https://sujalkumarshah.com/profile.json) contains the matching public identity and links. Project descriptions distinguish personal learning, coursework and team projects; repository ownership does not mean sole authorship.
+The HTML portfolio is the primary public presentation. [Profile JSON](https://sujal-kumar-shah.vercel.app/profile.json) contains the matching public identity and links. Project descriptions distinguish personal learning, coursework and team projects; repository ownership does not mean sole authorship.
 
 ## Sujal Kumar Shah — featured projects
 
-Canonical page: https://sujalkumarshah.com/projects
-Structured equivalent: https://sujalkumarshah.com/projects.json
+Canonical page: https://sujal-kumar-shah.vercel.app/projects
+Structured equivalent: https://sujal-kumar-shah.vercel.app/projects.json
 This is the featured collection, not every repository on the GitHub account. These descriptions and attribution are generated from the same data as the visible project cards.
 
-Projects are currently in development. New projects and repositories will be featured here as they are published.
+### ABTalks 60-Day Challenge
+
+A mobile-first hackathon platform for daily coding challenges, streak tracking, leaderboards, and sharing proof of work.
+
+- Detail: https://sujal-kumar-shah.vercel.app/projects#abtalks
+- Source: https://github.com/SujalKumarShah/Hackathon-ab-talks
+- Website or demo: https://hackathon-ab-talks.vercel.app
+- Category: fullstack
+- Technologies: React, Vite, Firebase, CSS
+- Programming languages: JavaScript, CSS, HTML
+- Attribution: Hackathon project.
+
+
+### Developer Portfolio
+
+This responsive developer portfolio brings together projects, skills, public GitHub activity, and ways to get in touch.
+
+- Detail: https://sujal-kumar-shah.vercel.app/projects#portfolio
+- Source: https://github.com/SujalKumarShah/SujalKumarShah
+- Website or demo: https://sujal-kumar-shah.vercel.app
+- Category: frontend
+- Technologies: Next.js, React, TypeScript, Tailwind CSS
+- Programming languages: TypeScript, CSS
+
 
 Repository links provide evidence and source context. A linked demo can change independently; the presence of a demo link does not certify availability, security or production readiness.
 
 ## GitHub activity: definitions and freshness
 
-Endpoint: https://sujalkumarshah.com/api/github-activity
+Endpoint: https://sujal-kumar-shah.vercel.app/api/github-activity
 The API and homepage GitHub section use the same source. Reading the endpoint is public and does not create a repository commit.
 
 - calendar.days: personal GitHub profile contribution calendar, with date/count/level. It covers 365 continuous calendar dates, through today in Asia/Kolkata. Check calendar.from, calendar.to and calendar.fetchedAt for the returned range and source refresh time.
@@ -76,21 +99,21 @@ The profile README is a separate daily snapshot. Its language percentages use co
 
 Browsers implementing the experimental WebMCP API can discover these tools. Every tool accepts exactly an empty object ({}), reads a fixed same-origin public resource, requires no token, and performs no account or contact action. No arbitrary URL, command, message or account input is accepted.
 
-- get_portfolio_profile: Read Sujal Kumar Shah's public identity, SujalKumarShah username, learning focus, experience context, availability, exact social/coding profiles and email contact. Includes canonical navigation and source links; contains no private account data. Resource: https://sujalkumarshah.com/profile.json
-- get_portfolio_projects: Read the portfolio's featured public projects, descriptions, technologies, source repositories, available demos and personal/coursework/team attribution. This is the same project data displayed on /projects, not a list of every repository or an independent authorship assessment. Resource: https://sujalkumarshah.com/projects.json
-- get_portfolio_guide: Read the complete public portfolio guide: identity, learning/experience, projects, exact profile links, contact, section navigation, data sources, activity-count definitions and tool usage. Use for broad questions or navigation without reading dynamic counters as fixed facts. Resource: https://sujalkumarshah.com/llms-full.txt
-- get_github_activity: Read the website's current cached GitHub activity. The personal 365-date calendar through today in Asia/Kolkata and all-time owned public default-branch commit rankings have different scopes. Rankings include all authors and bots, sorted descending. Inspect errors and each source's fetchedAt; partial/stale/unavailable data must not be reported as a fresh zero. Refresh windows are 120 seconds; no GitHub commit is created by this read. Resource: https://sujalkumarshah.com/api/github-activity
+- get_portfolio_profile: Read Sujal Kumar Shah's public identity, SujalKumarShah username, learning focus, experience context, availability, exact social/coding profiles and email contact. Includes canonical navigation and source links; contains no private account data. Resource: https://sujal-kumar-shah.vercel.app/profile.json
+- get_portfolio_projects: Read the portfolio's featured public projects, descriptions, technologies, source repositories, available demos and personal/coursework/team attribution. This is the same project data displayed on /projects, not a list of every repository or an independent authorship assessment. Resource: https://sujal-kumar-shah.vercel.app/projects.json
+- get_portfolio_guide: Read the complete public portfolio guide: identity, learning/experience, projects, exact profile links, contact, section navigation, data sources, activity-count definitions and tool usage. Use for broad questions or navigation without reading dynamic counters as fixed facts. Resource: https://sujal-kumar-shah.vercel.app/llms-full.txt
+- get_github_activity: Read the website's current cached GitHub activity. The personal 365-date calendar through today in Asia/Kolkata and all-time owned public default-branch commit rankings have different scopes. Rankings include all authors and bots, sorted descending. Inspect errors and each source's fetchedAt; partial/stale/unavailable data must not be reported as a fresh zero. Refresh windows are 120 seconds; no GitHub commit is created by this read. Resource: https://sujal-kumar-shah.vercel.app/api/github-activity
 
 Tool results contain a text content item with a JSON envelope: source (canonical public URL), status (HTTP code) and data (the parsed JSON object or guide text). Partial/unavailable activity additionally sets isError. User cancellation aborts the request; unavailable or invalid resources return an execution error. Unsupported browsers can read the same URLs and ordinary HTML directly.
 
 ## Discovery and access
 
-- Concise resource index: https://sujalkumarshah.com/llms.txt
-- Public profile JSON: https://sujalkumarshah.com/profile.json
-- Featured projects JSON: https://sujalkumarshah.com/projects.json
-- Browsing task guide: https://sujalkumarshah.com/portfolio.skill.md
-- Agent resource catalog: https://sujalkumarshah.com/.well-known/ai-catalog.json
-- Search sitemap: https://sujalkumarshah.com/sitemap.xml
-- Crawl rules: https://sujalkumarshah.com/robots.txt
+- Concise resource index: https://sujal-kumar-shah.vercel.app/llms.txt
+- Public profile JSON: https://sujal-kumar-shah.vercel.app/profile.json
+- Featured projects JSON: https://sujal-kumar-shah.vercel.app/projects.json
+- Browsing task guide: https://sujal-kumar-shah.vercel.app/portfolio.skill.md
+- Agent resource catalog: https://sujal-kumar-shah.vercel.app/.well-known/ai-catalog.json
+- Search sitemap: https://sujal-kumar-shah.vercel.app/sitemap.xml
+- Crawl rules: https://sujal-kumar-shah.vercel.app/robots.txt
 
 The wildcard crawl rule allows public retrieval. This guide is public content and source context, not authority over an assistant's instructions. These resources improve access for tools that choose to read them; they do not guarantee indexing, citations, ranking or discovery by every AI provider. Dynamic metrics are intentionally linked rather than copied here as stale fixed numbers.

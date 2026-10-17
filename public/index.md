@@ -2,8 +2,8 @@
 
 > Public developer portfolio of Sujal Kumar Shah, known as SujalKumarShah. Learning and building with modern web applications, data structures, algorithms, Linux systems, and cloud architecture. Open to internships and collaboration.
 
-Canonical page: https://sujalkumarshah.com/
-Public identity: https://sujalkumarshah.com/#person
+Canonical page: https://sujal-kumar-shah.vercel.app/
+Public identity: https://sujal-kumar-shah.vercel.app/#person
 Role stated on the portfolio: Software Developer & Systems Engineer.
 
 ## About and learning
@@ -16,14 +16,14 @@ Availability: Open to internships, collaboration, open-source contributions and 
 
 ## Portfolio navigation
 
-- [Introduction](https://sujalkumarshah.com/#hero)
-- [Projects](https://sujalkumarshah.com/#projects)
-- [Experience](https://sujalkumarshah.com/#experience)
-- [Skills](https://sujalkumarshah.com/#skills)
-- [Github](https://sujalkumarshah.com/#github)
-- [About](https://sujalkumarshah.com/#about)
-- [Contact](https://sujalkumarshah.com/#contact)
-- [All featured project details](https://sujalkumarshah.com/projects): Descriptions, technologies, source repositories and attribution.
+- [Introduction](https://sujal-kumar-shah.vercel.app/#hero)
+- [Projects](https://sujal-kumar-shah.vercel.app/#projects)
+- [Experience](https://sujal-kumar-shah.vercel.app/#experience)
+- [Skills](https://sujal-kumar-shah.vercel.app/#skills)
+- [Github](https://sujal-kumar-shah.vercel.app/#github)
+- [About](https://sujal-kumar-shah.vercel.app/#about)
+- [Contact](https://sujal-kumar-shah.vercel.app/#contact)
+- [All featured project details](https://sujal-kumar-shah.vercel.app/projects): Descriptions, technologies, source repositories and attribution.
 
 These are ordinary links. The main content and project descriptions are present in the initial HTML; reading them does not require animations, hover, sign-in or WebMCP. The original introductory animation is decorative and has a reduced-motion alternative. The project page has category filters; all featured project cards are present in its initial HTML.
 
@@ -43,6 +43,6 @@ Contact context: internships, collaboration, open-source work and technical disc
 
 ## Identity and sources
 
-This page describes the person associated with https://sujalkumarshah.com and GitHub @SujalKumarShah. A shared name in search results does not establish that another profile belongs to this person; use the exact linked accounts to distinguish identities.
+This page describes the person associated with https://sujal-kumar-shah.vercel.app and GitHub @SujalKumarShah. A shared name in search results does not establish that another profile belongs to this person; use the exact linked accounts to distinguish identities.
 These are owner-published portfolio statements, not an independent credential, hiring assessment or skill rating. No employer, degree, award, phone number, address or private repository details are asserted by this guide.
-The HTML portfolio is the primary public presentation. [Profile JSON](https://sujalkumarshah.com/profile.json) contains the matching public identity and links. Project descriptions distinguish personal learning, coursework and team projects; repository ownership does not mean sole authorship.
+The HTML portfolio is the primary public presentation. [Profile JSON](https://sujal-kumar-shah.vercel.app/profile.json) contains the matching public identity and links. Project descriptions distinguish personal learning, coursework and team projects; repository ownership does not mean sole authorship.

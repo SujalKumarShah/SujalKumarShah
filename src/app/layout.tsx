@@ -139,7 +139,7 @@ const jsonLd = {
       "@id": WEBSITE_ID,
       url: SITE_URL,
       name: SITE_NAME,
-      alternateName: ["SujalKumarShah", "sujalkumarshah.com"],
+      alternateName: ["SujalKumarShah", "sujal-kumar-shah.vercel.app"],
       inLanguage: "en",
       description: SITE_DESCRIPTION,
       publisher: {

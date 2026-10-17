@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://sujalkumarshah.com/">
+  <a href="https://sujal-kumar-shah.vercel.app/">
     <picture>
       <source media="(prefers-reduced-motion: reduce)" srcset="assets/readme/header-static@3x.png" />
       <img src="assets/readme/header@3x.gif" width="880" alt="Sujal Kumar Shah — Software Developer &amp; Systems Engineer. Open to internships." />
@@ -30,8 +30,8 @@ I'm **Sujal Kumar Shah**, a software developer focused on **modern web developme
 <p align="center">
   <a href="https://github.com/SujalKumarShah">
     <picture>
-      <source media="(max-width: 600px)" srcset="assets/readme/activity-compact-b0c02a7faa99.svg" />
-      <img src="assets/readme/activity-761c7a8d5c2f.svg" width="880" alt="405 profile contributions of all types and 66 active days in the past year. Separately, 331 all-time commits in owned public repositories. Monthly contribution chart." />
+      <source media="(max-width: 600px)" srcset="assets/readme/activity-compact-159e19aab062.svg" />
+      <img src="assets/readme/activity-78342c867709.svg" width="880" alt="14 profile contributions of all types and 5 active days in the past year. Separately, 25 all-time commits in owned public repositories. Monthly contribution chart." />
     </picture>
   </a>
 </p>
@@ -39,12 +39,17 @@ I'm **Sujal Kumar Shah**, a software developer focused on **modern web developme
 <p align="center">
   <a href="https://github.com/SujalKumarShah?tab=repositories">
     <picture>
-      <source media="(max-width: 600px)" srcset="assets/readme/languages-compact-8a6e91a2085e.svg" />
-      <img src="assets/readme/languages-f70d8b67afcd.svg" width="880" alt="Combined public repository language percentages by source lines: JavaScript 30.4%, CSS 23.4%, HTML 16.2%, TypeScript 14.3%, C++ 8.1%, Python 7.6%" />
+      <source media="(max-width: 600px)" srcset="assets/readme/languages-compact-81d6f301de62.svg" />
+      <img src="assets/readme/languages-822e37ec8733.svg" width="880" alt="Combined public repository language percentages by source lines: JavaScript 49.6%, TypeScript 39.9%, CSS 8.6%, Python 1.7%, HTML 0.2%" />
     </picture>
   </a>
 </p>
 <!-- activity:end -->
+
+### Selected projects
+
+- **[ABTalks 60-Day Challenge](https://hackathon-ab-talks.vercel.app)** — a hackathon web app for coding challenges, streak tracking, and proof of work. [Source](https://github.com/SujalKumarShah/Hackathon-ab-talks).
+- **[Developer Portfolio](https://sujal-kumar-shah.vercel.app)** — this Next.js portfolio with projects and public GitHub activity. [Source](https://github.com/SujalKumarShah/SujalKumarShah).
 
 ### What I'm working on
 
@@ -68,3 +73,20 @@ I value readable code, a strong understanding of the fundamentals, and steady im
 
 <p align="center"><strong>Thanks for stopping by.</strong><br />
 <sub>Understand first. Build second. Keep going.</sub></p>
+
+### Run the portfolio locally
+
+Requires Node.js 22 or later and npm.
+
+```sh
+git clone https://github.com/SujalKumarShah/SujalKumarShah.git
+cd SujalKumarShah
+npm ci
+npm run dev
+```
+
+Open <http://localhost:3000>. Use `npm run build` and `npm start` for a production build. Run `npm test`, `npm run lint`, and `npm run typecheck` to check changes.
+
+Profile links and the deployment URL live in `public/profile.json`; project cards use `src/data/projects.json`. After updating either, run `npm run generate:agents` and `node scripts/generate-project-covers.mjs` to refresh public resources and covers.
+
+The daily workflow refreshes GitHub statistics from the public portfolio endpoint. An optional server-side `GITHUB_TOKEN` increases API limits; never expose it with a `NEXT_PUBLIC_` prefix or commit it. See [README asset documentation](docs/README-ASSETS.md) for statistics scopes and regeneration steps.

@@ -2,10 +2,51 @@
   "schemaVersion": "1.0",
   "owner": {
     "name": "Sujal Kumar Shah",
-    "id": "https://sujalkumarshah.com/#person",
-    "url": "https://sujalkumarshah.com"
+    "id": "https://sujal-kumar-shah.vercel.app/#person",
+    "url": "https://sujal-kumar-shah.vercel.app"
   },
-  "source": "https://sujalkumarshah.com/projects",
+  "source": "https://sujal-kumar-shah.vercel.app/projects",
   "scope": "Featured public projects displayed on the portfolio; not every GitHub repository or sole-authorship claims",
-  "projects": []
+  "projects": [
+    {
+      "id": "abtalks",
+      "title": "ABTalks 60-Day Challenge",
+      "description": "A mobile-first hackathon platform for daily coding challenges, streak tracking, leaderboards, and sharing proof of work.",
+      "url": "https://sujal-kumar-shah.vercel.app/projects#abtalks",
+      "repository": "https://github.com/SujalKumarShah/Hackathon-ab-talks",
+      "demo": "https://hackathon-ab-talks.vercel.app",
+      "category": "fullstack",
+      "technologies": [
+        "React",
+        "Vite",
+        "Firebase",
+        "CSS"
+      ],
+      "programmingLanguages": [
+        "JavaScript",
+        "CSS",
+        "HTML"
+      ],
+      "attribution": "Hackathon project."
+    },
+    {
+      "id": "portfolio",
+      "title": "Developer Portfolio",
+      "description": "This responsive developer portfolio brings together projects, skills, public GitHub activity, and ways to get in touch.",
+      "url": "https://sujal-kumar-shah.vercel.app/projects#portfolio",
+      "repository": "https://github.com/SujalKumarShah/SujalKumarShah",
+      "demo": "https://sujal-kumar-shah.vercel.app",
+      "category": "frontend",
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
+      "programmingLanguages": [
+        "TypeScript",
+        "CSS"
+      ]
+    }
+  ]
 }

@@ -19,7 +19,7 @@ The portfolio's public repositories and READMEs were checked through GitHub's of
 
 ## Existing controls retained and checked
 
-- HTTP and www origins use HTTP 308 redirects toward `https://sujalkumarshah.com/`; the HTTP www variant has two permanent hops. Trailing slashes normalize to the canonical page.
+- HTTP and www origins use HTTP 308 redirects toward `https://sujal-kumar-shah.vercel.app/`; the HTTP www variant has two permanent hops. Trailing slashes normalize to the canonical page.
 - The two pages return HTTP 200, one H1, English language metadata, self-referencing canonical URLs and index/follow directives. Tracking parameters are absent from canonical URLs.
 - The sitemap lists only canonical, indexable pages. It does not invent a fresh modification date on every build. Google ignores priority and change-frequency hints; these are not claimed as ranking improvements.
 - `robots.txt` permits crawlers and links to the sitemap. It contains no unsupported Host directive. The local 96-pixel PNG favicon remains crawlable at a stable URL.
@@ -28,13 +28,13 @@ The portfolio's public repositories and READMEs were checked through GitHub's of
 - Person, WebSite and ProfilePage data use the owner's public identity and exact profile links. The single footer design credit remains excluded from Google snippets.
 - Public agent resources remain consistent with the canonical page inventory. They assist discovery and interpretation; they are not ranking guarantees or replacements for readable pages.
 
-`npm run verify:site` checks metadata consistency, indexability, schema/data agreement, source links and local covers, canonical URLs, the legacy redirect and preserved query parameters, the sitemap, crawl files, favicon, 404 behavior and live GitHub data. `PORTFOLIO_CHECK_URL=https://sujalkumarshah.com npm run verify:site` checks the deployed site. Full Lighthouse performance results from earlier work remain historical measurements, not measurements of this revision.
+`npm run verify:site` checks metadata consistency, indexability, schema/data agreement, source links and local covers, canonical URLs, the legacy redirect and preserved query parameters, the sitemap, crawl files, favicon, 404 behavior and live GitHub data. `PORTFOLIO_CHECK_URL=https://sujal-kumar-shah.vercel.app npm run verify:site` checks the deployed site. Full Lighthouse performance results from earlier work remain historical measurements, not measurements of this revision.
 
 The production build, ESLint, TypeScript and eight existing contribution tests pass. In-browser checks at 320-pixel and 1280-pixel widths found no horizontal overflow. The C++ filter displays one repository, Full Stack one, Frontend two, and All four. All four local covers load at their intrinsic 1200-pixel width. A source-import scan finds no disconnected source files after the consolidation.
 
 ## Search-engine account steps
 
-1. In Google Search Console, submit or refresh `https://sujalkumarshah.com/sitemap.xml`. Inspect the homepage and `/projects`, test their live availability, and request indexing after deployment. Older search previews and the robots report require a recrawl to change.
+1. In Google Search Console, submit or refresh `https://sujal-kumar-shah.vercel.app/sitemap.xml`. Inspect the homepage and `/projects`, test their live availability, and request indexing after deployment. Older search previews and the robots report require a recrawl to change.
 2. Add the site to Bing Webmaster Tools, using the existing verified Google Search Console property import when available, or an ownership method supplied by Bing. Submit the same sitemap and inspect both canonical pages. The optional Bing tag requires a rebuild after setting its value.
 3. Keep the canonical portfolio URL on the owner's real professional profiles. These account settings were not changed by this code review.
 4. Publish original project writeups as work progresses: the problem, the owner's specific contribution, implementation choices and verifiable results. Update this collection when those pages exist. Do not add keyword-stuffed pages or unsupported claims to chase rankings.

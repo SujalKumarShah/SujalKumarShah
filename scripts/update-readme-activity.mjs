@@ -7,6 +7,7 @@ import { tmpdir } from "node:os";
 import { activityAssets, activityBlock, snapshotImagePattern } from "./readme-visuals.mjs";
 import { refreshedToday } from "./readme-refresh-policy.mjs";
 
+const profile = JSON.parse(await readFile(new URL("../public/profile.json", import.meta.url), "utf8"));
 const root = fileURLToPath(new URL("../", import.meta.url));
 // Layout-only edits can reuse the last verified snapshot without recounting code.
 const renderOnly = process.argv.includes("--render-only");
@@ -17,7 +18,7 @@ if (process.argv.includes("--daily") && !renderOnly) {
   } catch {
     // A missing or unreadable snapshot needs a complete refresh.
   }
-  if (refreshedToday(previous)) {
+  if (previous?.githubUsername === profile.githubUsername && refreshedToday(previous)) {
     console.log("The README already has today's verified snapshot; skipping a duplicate daily refresh.");
     process.exit(0);
   }
@@ -26,7 +27,7 @@ let data;
 if (renderOnly) {
   data = JSON.parse(await readFile(join(root, "assets/readme/activity.json"), "utf8"));
 } else {
-  const response = await fetch(process.env.ACTIVITY_SOURCE_URL || "https://sujalkumarshah.com/api/github-activity", {
+  const response = await fetch(process.env.ACTIVITY_SOURCE_URL || `${profile.url}/api/github-activity`, {
     headers: { Accept: "application/json" },
     signal: AbortSignal.timeout(60000),
   });
@@ -47,7 +48,7 @@ for (let i = 0; i < days.length; i++) {
 }
 for (let i = 0; i < repos.length; i++) {
   const repo = repos[i];
-  if (typeof repo.name !== "string" || !/^[\w.-]+$/.test(repo.name) || !Number.isInteger(repo.count) || repo.count < 1 || typeof repo.href !== "string" || !/^https:\/\/github\.com\/[\w.-]+\/[\w.-]+$/.test(repo.href) || (i && repo.count > repos[i - 1].count))
+  if (typeof repo.href !== "string" || !repo.href.toLowerCase().startsWith(`https://github.com/${profile.githubUsername.toLowerCase()}/`) || typeof repo.name !== "string" || !/^[\w.-]+$/.test(repo.name) || !Number.isInteger(repo.count) || repo.count < 1 || typeof repo.href !== "string" || !/^https:\/\/github\.com\/[\w.-]+\/[\w.-]+$/.test(repo.href) || (i && repo.count > repos[i - 1].count))
     throw new Error("Invalid repository ranking.");
 }
 const { from, to } = data.calendar;
@@ -86,7 +87,7 @@ for (const [, file] of readme.matchAll(/assets\/readme\/((?:activity|languages)(
 await mkdir(join(root, "assets/readme"), { recursive: true });
 for (const [file, contents] of [
   ...[...assets.values()].map(asset => [`assets/readme/${asset.file}`, asset.contents]),
-  ["assets/readme/activity.json", JSON.stringify({ calendar: data.calendar, repositories: data.repositories, languages }, null, 2) + "\n"],
+  ["assets/readme/activity.json", JSON.stringify({ githubUsername: profile.githubUsername, calendar: data.calendar, repositories: data.repositories, languages }, null, 2) + "\n"],
   ["README.md", updated],
 ]) {
   const path = join(root, file);

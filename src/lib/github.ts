@@ -2,7 +2,7 @@ import "server-only";
 import { unstable_cache } from "next/cache";
 import savedActivity from "../../assets/readme/activity.json";
 import {
-  GITHUB_USERNAME, GITHUB_CALENDAR_TIME_ZONE, contributionRange, normalizeCalendar, parseContributionHTML,
+  GITHUB_USERNAME, GITHUB_CALENDAR_TIME_ZONE, snapshotBelongsToUser, contributionRange, normalizeCalendar, parseContributionHTML,
   parseRepositoryCommitCount, sortRepositoryTotals, type GitHubSnapshot,
 } from "./github-data";
 
@@ -80,7 +80,8 @@ export async function getGitHubSnapshot(): Promise<GitHubSnapshot> {
   const { from, to } = contributionRange();
   const bucket = Math.floor(Date.now() / 120000);
   const [days, repos] = await Promise.allSettled([calendar(from, to, bucket), repositories(bucket)]);
-  const saved = savedActivity as unknown as GitHubSnapshot;
+  const saved = (snapshotBelongsToUser(savedActivity, GITHUB_USERNAME)
+    ? savedActivity : {}) as Partial<GitHubSnapshot>;
   const savedCalendar = saved.calendar?.from === from && saved.calendar?.to === to ? saved.calendar : null;
   const savedRepositories = saved.repositories?.scope === "all-time" ? saved.repositories : null;
   return {
