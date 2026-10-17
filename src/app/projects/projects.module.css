@@ -1,0 +1,135 @@
+/* Enter on a wrapper so the finished animation never overrides card hover. */
+.entry {
+  min-width: 0;
+  animation: arrive 460ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  animation-delay: calc(var(--project-order, 0) * 55ms);
+}
+.card {
+  transition:
+    transform 380ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 300ms ease,
+    box-shadow 380ms ease;
+}
+.cover {
+  transform: scale(1);
+  transition: transform 650ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.overlay {
+  opacity: 0;
+  background: #09090b42;
+  pointer-events: none;
+  transition: opacity 250ms ease;
+}
+.overlayAction {
+  opacity: 0;
+  transform: translateY(7px) scale(0.96);
+  pointer-events: none;
+  transition:
+    opacity 220ms ease,
+    transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 220ms ease;
+}
+.overlayAction + .overlayAction {
+  transition-delay: 35ms, 35ms, 0ms;
+}
+.overlay:focus-within {
+  opacity: 1;
+}
+.overlay:focus-within .overlayAction {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+.card:focus-within {
+  border-color: #49494f;
+}
+.action,
+.back {
+  transition:
+    transform 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 220ms ease,
+    filter 220ms ease;
+}
+.action:active,
+.back:active {
+  transform: scale(0.98);
+}
+@keyframes arrive {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: translateY(-4px);
+    border-color: #39393f;
+    box-shadow: 0 14px 32px #00000038;
+  }
+  .card:hover .cover {
+    transform: scale(1.035);
+  }
+  .card:hover .overlay {
+    opacity: 1;
+  }
+  .card:hover .overlayAction {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+  .overlayAction:hover {
+    background-color: #343438;
+  }
+  .action:hover {
+    border-color: #52525b;
+    filter: brightness(1.15);
+  }
+  .action:hover svg {
+    transform: translateY(-1px);
+  }
+  .back:hover {
+    border-color: #71717a;
+    transform: translateX(-2px);
+  }
+}
+.action svg {
+  transition: transform 220ms ease;
+}
+@media (max-width: 374px) {
+  .capsule {
+    flex-wrap: nowrap;
+    gap: 2px;
+  }
+  .capsule button {
+    min-height: 32px;
+    padding-inline: 8px;
+    font-size: 11px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .entry {
+    animation: none;
+  }
+  .card,
+  .cover,
+  .overlay,
+  .overlayAction,
+  .action,
+  .action svg,
+  .back {
+    transition: none;
+  }
+  .card:hover,
+  .card:hover .cover,
+  .overlayAction,
+  .action:active,
+  .action:hover svg,
+  .back:hover,
+  .back:active {
+    transform: none;
+  }
+}
