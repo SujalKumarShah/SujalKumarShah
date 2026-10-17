@@ -116,7 +116,7 @@ export function activityBlock(data, languages, assets) {
   </a>
 </p>`;
   return `<!-- activity:start -->
-### GitHub Analytics
+## GitHub activity
 
 ${picture("activity", "https://github.com/SujalKumarShah", `${total} profile contributions of all types and ${active} active days in the past year. Separately, ${commits} all-time commits in owned public repositories. Monthly contribution chart.`)}
 
