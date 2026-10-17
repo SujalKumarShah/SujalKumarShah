@@ -1,11 +1,7 @@
 {
+  "githubUsername": "SujalKumarShah",
   "calendar": {
     "days": [
-      {
-        "date": "2025-10-18",
-        "count": 0,
-        "level": 0
-      },
       {
         "date": "2025-10-19",
         "count": 0,
@@ -53,8 +49,8 @@
       },
       {
         "date": "2025-10-28",
-        "count": 6,
-        "level": 2
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2025-10-29",
@@ -138,13 +134,13 @@
       },
       {
         "date": "2025-11-14",
-        "count": 2,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2025-11-15",
-        "count": 2,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2025-11-16",
@@ -223,8 +219,8 @@
       },
       {
         "date": "2025-12-01",
-        "count": 1,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2025-12-02",
@@ -258,18 +254,18 @@
       },
       {
         "date": "2025-12-08",
-        "count": 2,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2025-12-09",
-        "count": 1,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2025-12-10",
-        "count": 1,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2025-12-11",
@@ -278,8 +274,8 @@
       },
       {
         "date": "2025-12-12",
-        "count": 2,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2025-12-13",
@@ -328,13 +324,13 @@
       },
       {
         "date": "2025-12-22",
-        "count": 12,
-        "level": 4
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2025-12-23",
-        "count": 1,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2025-12-24",
@@ -348,8 +344,8 @@
       },
       {
         "date": "2025-12-26",
-        "count": 1,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2025-12-27",
@@ -628,13 +624,13 @@
       },
       {
         "date": "2026-02-20",
-        "count": 2,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-02-21",
-        "count": 2,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-02-22",
@@ -753,8 +749,8 @@
       },
       {
         "date": "2026-03-17",
-        "count": 1,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-03-18",
@@ -763,8 +759,8 @@
       },
       {
         "date": "2026-03-19",
-        "count": 0,
-        "level": 0
+        "count": 1,
+        "level": 4
       },
       {
         "date": "2026-03-20",
@@ -853,13 +849,13 @@
       },
       {
         "date": "2026-04-06",
-        "count": 4,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-04-07",
-        "count": 1,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-04-08",
@@ -1033,8 +1029,8 @@
       },
       {
         "date": "2026-05-12",
-        "count": 7,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-05-13",
@@ -1058,8 +1054,8 @@
       },
       {
         "date": "2026-05-17",
-        "count": 7,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-05-18",
@@ -1068,8 +1064,8 @@
       },
       {
         "date": "2026-05-19",
-        "count": 1,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-05-20",
@@ -1183,8 +1179,8 @@
       },
       {
         "date": "2026-06-11",
-        "count": 4,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-06-12",
@@ -1193,8 +1189,8 @@
       },
       {
         "date": "2026-06-13",
-        "count": 1,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-06-14",
@@ -1213,23 +1209,23 @@
       },
       {
         "date": "2026-06-17",
-        "count": 1,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-06-18",
-        "count": 1,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-06-19",
-        "count": 8,
-        "level": 2
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-06-20",
-        "count": 1,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-06-21",
@@ -1243,8 +1239,8 @@
       },
       {
         "date": "2026-06-23",
-        "count": 2,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-06-24",
@@ -1378,8 +1374,8 @@
       },
       {
         "date": "2026-07-20",
-        "count": 2,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-07-21",
@@ -1393,8 +1389,8 @@
       },
       {
         "date": "2026-07-23",
-        "count": 1,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-07-24",
@@ -1428,8 +1424,8 @@
       },
       {
         "date": "2026-07-30",
-        "count": 8,
-        "level": 2
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-07-31",
@@ -1448,8 +1444,8 @@
       },
       {
         "date": "2026-08-03",
-        "count": 6,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-08-04",
@@ -1458,8 +1454,8 @@
       },
       {
         "date": "2026-08-05",
-        "count": 4,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-08-06",
@@ -1473,13 +1469,13 @@
       },
       {
         "date": "2026-08-08",
-        "count": 17,
-        "level": 3
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-08-09",
-        "count": 20,
-        "level": 3
+        "count": 1,
+        "level": 4
       },
       {
         "date": "2026-08-10",
@@ -1513,8 +1509,8 @@
       },
       {
         "date": "2026-08-16",
-        "count": 14,
-        "level": 2
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-08-17",
@@ -1533,8 +1529,8 @@
       },
       {
         "date": "2026-08-20",
-        "count": 1,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-08-21",
@@ -1643,143 +1639,143 @@
       },
       {
         "date": "2026-09-11",
-        "count": 1,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-09-12",
-        "count": 11,
-        "level": 2
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-09-13",
-        "count": 17,
-        "level": 3
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-09-14",
-        "count": 16,
-        "level": 3
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-09-15",
-        "count": 7,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-09-16",
-        "count": 1,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-09-17",
-        "count": 7,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-09-18",
-        "count": 16,
-        "level": 3
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-09-19",
-        "count": 11,
-        "level": 2
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-09-20",
-        "count": 7,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-09-21",
-        "count": 5,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-09-22",
-        "count": 4,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-09-23",
-        "count": 6,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-09-24",
-        "count": 4,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-09-25",
-        "count": 3,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-09-26",
-        "count": 3,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-09-27",
-        "count": 1,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-09-28",
-        "count": 11,
-        "level": 2
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-09-29",
-        "count": 7,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-09-30",
-        "count": 4,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-10-01",
-        "count": 7,
-        "level": 1
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-10-02",
-        "count": 8,
-        "level": 2
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-10-03",
-        "count": 22,
-        "level": 4
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-10-04",
-        "count": 28,
-        "level": 4
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-10-05",
-        "count": 8,
-        "level": 2
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-10-06",
-        "count": 8,
-        "level": 2
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-10-07",
-        "count": 8,
-        "level": 2
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-10-08",
-        "count": 10,
-        "level": 2
+        "count": 0,
+        "level": 0
       },
       {
         "date": "2026-10-09",
@@ -1808,251 +1804,87 @@
       },
       {
         "date": "2026-10-14",
-        "count": 1,
-        "level": 1
-      },
-      {
-        "date": "2026-10-15",
-        "count": 4,
-        "level": 1
-      },
-      {
-        "date": "2026-10-16",
         "count": 0,
         "level": 0
       },
       {
+        "date": "2026-10-15",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-10-16",
+        "count": 1,
+        "level": 4
+      },
+      {
         "date": "2026-10-17",
-        "count": 12,
-        "level": 2
+        "count": 1,
+        "level": 4
+      },
+      {
+        "date": "2026-10-18",
+        "count": 10,
+        "level": 4
       }
     ],
-    "from": "2025-10-18",
-    "to": "2026-10-17",
-    "fetchedAt": "2026-10-17T09:48:37.167Z"
+    "from": "2025-10-19",
+    "to": "2026-10-18",
+    "timeZone": "Asia/Kolkata",
+    "fetchedAt": "2026-10-17T19:28:28.055Z"
   },
   "repositories": {
     "repos": [
       {
+        "name": "Hackathon-ab-talks",
+        "href": "https://github.com/SujalKumarShah/Hackathon-ab-talks",
+        "count": 14
+      },
+      {
         "name": "SujalKumarShah",
         "href": "https://github.com/SujalKumarShah/SujalKumarShah",
-        "count": 72
-      },
-      {
-        "name": "100xDSA",
-        "href": "https://github.com/SujalKumarShah/100xDSA",
-        "count": 64
-      },
-      {
-        "name": "100xDevs",
-        "href": "https://github.com/SujalKumarShah/100xDevs",
-        "count": 48
-      },
-      {
-        "name": "BitForgeXABTalks",
-        "href": "https://github.com/SujalKumarShah/BitForgeXABTalks",
-        "count": 38
-      },
-      {
-        "name": "FSD-BACKEND",
-        "href": "https://github.com/SujalKumarShah/FSD-BACKEND",
-        "count": 33
-      },
-      {
-        "name": "speedflow",
-        "href": "https://github.com/SujalKumarShah/speedflow",
-        "count": 13
-      },
-      {
-        "name": "Amazon_clone",
-        "href": "https://github.com/SujalKumarShah/Amazon_clone",
         "count": 11
-      },
-      {
-        "name": "college-web-dev",
-        "href": "https://github.com/SujalKumarShah/college-web-dev",
-        "count": 11
-      },
-      {
-        "name": "College_cpp",
-        "href": "https://github.com/SujalKumarShah/College_cpp",
-        "count": 9
-      },
-      {
-        "name": "Eventrix",
-        "href": "https://github.com/SujalKumarShah/Eventrix",
-        "count": 9
-      },
-      {
-        "name": "leetcode-progress",
-        "href": "https://github.com/SujalKumarShah/leetcode-progress",
-        "count": 8
-      },
-      {
-        "name": "tailwind-projects",
-        "href": "https://github.com/SujalKumarShah/tailwind-projects",
-        "count": 6
-      },
-      {
-        "name": "CSE24_JS",
-        "href": "https://github.com/SujalKumarShah/CSE24_JS",
-        "count": 4
-      },
-      {
-        "name": "Data-Visualization-using-python",
-        "href": "https://github.com/SujalKumarShah/Data-Visualization-using-python",
-        "count": 4
-      },
-      {
-        "name": "External-assesment-sem2",
-        "href": "https://github.com/SujalKumarShah/External-assesment-sem2",
-        "count": 1
       }
     ],
     "scope": "all-time",
     "source": "github-default-branches",
-    "fetchedAt": "2026-10-17T09:48:37.042Z"
+    "fetchedAt": "2026-10-17T19:28:28.148Z"
   },
   "languages": {
     "lines": {
-      "JavaScript": 7075,
-      "CSS": 5454,
-      "HTML": 3764,
-      "TypeScript": 3328,
-      "C++": 1897,
-      "Python": 1760
+      "JavaScript": 4215,
+      "TypeScript": 3388,
+      "CSS": 728,
+      "Python": 145,
+      "HTML": 15
     },
     "repositories": [
       {
-        "repository": "SujalKumarShah/100xDevs",
-        "commit": "877bff43fa3cfdd747ecc570b56cad0b676e9652",
-        "lines": {
-          "HTML": 1581,
-          "CSS": 1286,
-          "JavaScript": 622
-        }
+        "repository": "SujalKumarShah/adaptive-ai-vulnerability-scanner",
+        "commit": null,
+        "lines": {}
       },
       {
-        "repository": "SujalKumarShah/100xDSA",
-        "commit": "0c4a9cf581c1eb91580d05f0a7b6a4ceed3d3d84",
+        "repository": "SujalKumarShah/Hackathon-ab-talks",
+        "commit": "a6ddca0c6ee74d2c886817dad8249bd8f06c5a0b",
         "lines": {
-          "C++": 1321
-        }
-      },
-      {
-        "repository": "SujalKumarShah/Amazon_clone",
-        "commit": "c5d22277d2883a384d27207e2bfed65e55d6e361",
-        "lines": {
-          "CSS": 1767,
-          "JavaScript": 1292,
-          "HTML": 962
-        }
-      },
-      {
-        "repository": "SujalKumarShah/BitForgeXABTalks",
-        "commit": "afe2a4567b1235aadcf55b0a5b43b03f624804cb",
-        "lines": {
-          "JavaScript": 2873,
-          "Python": 1436,
-          "CSS": 1177,
-          "HTML": 33
-        }
-      },
-      {
-        "repository": "SujalKumarShah/college-web-dev",
-        "commit": "1476440a57b8909f8225f9b0b134506fd88e8d90",
-        "lines": {
-          "HTML": 759,
-          "CSS": 330
-        }
-      },
-      {
-        "repository": "SujalKumarShah/College_cpp",
-        "commit": "f3de1e79fcb190157e6d23175109cd42e3a4f77d",
-        "lines": {
-          "C++": 535
-        }
-      },
-      {
-        "repository": "SujalKumarShah/CSE24_JS",
-        "commit": "cde36024c56d31c517d68b006756245d079d9e6d",
-        "lines": {
-          "JavaScript": 26,
-          "HTML": 11
-        }
-      },
-      {
-        "repository": "SujalKumarShah/Data-Visualization-using-python",
-        "commit": "1edb5059618eda1042f84c6ad8188cef29be5690",
-        "lines": {
-          "Python": 66
-        }
-      },
-      {
-        "repository": "SujalKumarShah/Eventrix",
-        "commit": "5906ee1f72a2cdb21eeeb7fc4b042c4c4e02f9a7",
-        "lines": {
-          "JavaScript": 71,
-          "CSS": 3,
-          "HTML": 1
-        }
-      },
-      {
-        "repository": "SujalKumarShah/External-assesment-sem2",
-        "commit": "7403d0708e41a2da7472d2915b090ec6792c46b6",
-        "lines": {
-          "CSS": 35,
-          "JavaScript": 20,
-          "HTML": 16
-        }
-      },
-      {
-        "repository": "SujalKumarShah/FSD-BACKEND",
-        "commit": "88c0f0dd8ddc6ab3b85e0d71e28e80daffa7bf97",
-        "lines": {
-          "JavaScript": 774,
-          "CSS": 531,
-          "HTML": 330
-        }
-      },
-      {
-        "repository": "SujalKumarShah/leetcode-progress",
-        "commit": "7f17e4fd8507e3313110ad4f28c7699bb05d02e5",
-        "lines": {
-          "C++": 41
+          "JavaScript": 2787,
+          "CSS": 387,
+          "HTML": 15
         }
       },
       {
         "repository": "SujalKumarShah/SujalKumarShah",
-        "commit": "1bd2523d4728c07a960ddd0f6f39f6f628b5a336",
+        "commit": "2c15c97d41bb0e3bec5d0756dc8d3c4b91ec7f6f",
         "lines": {
-          "TypeScript": 3328,
-          "JavaScript": 600,
-          "CSS": 247,
-          "Python": 161
-        }
-      },
-      {
-        "repository": "SujalKumarShah/speedflow",
-        "commit": "9c964059f5af9710587191eaecf26cfb88b91c7b",
-        "lines": {
-          "JavaScript": 780,
-          "Python": 97,
-          "CSS": 75,
-          "HTML": 36
-        }
-      },
-      {
-        "repository": "SujalKumarShah/tailwind-projects",
-        "commit": "071cd24aa286a202ac6fb55451937722fdbb0d34",
-        "lines": {
-          "HTML": 35,
-          "JavaScript": 17,
-          "CSS": 3
+          "TypeScript": 3388,
+          "JavaScript": 1428,
+          "CSS": 341,
+          "Python": 145
         }
       }
     ],
-    "fetchedAt": "2026-10-17T09:48:59.688813+00:00",
+    "fetchedAt": "2026-10-17T19:28:41.636835+00:00",
     "counter": "cloc 2.10",
     "scope": "public-non-fork-default-branches"
   }

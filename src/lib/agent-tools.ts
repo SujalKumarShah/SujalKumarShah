@@ -1,4 +1,4 @@
-const SITE_URL = "https://sujalkumarshah.com";
+const SITE_URL = "https://sujal-kumar-shah.vercel.app";
 
 export type PublicToolDefinition = {
   name: string;

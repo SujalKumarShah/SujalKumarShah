@@ -1,6 +1,7 @@
 import React from "react";
 import { FolderGit2, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { projects } from "@/lib/projects";
 
 const ProjectsSection = () => {
   return (
@@ -10,11 +11,11 @@ const ProjectsSection = () => {
           <div>
             <div className="flex items-center gap-3">
               <h3 className="text-xl font-semibold text-white sm:text-2xl">
-                Projects in Development
+                Selected Projects
               </h3>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-500/20 bg-amber-500/10 px-2.5 py-0.5 text-xs font-medium text-amber-400">
                 <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-amber-400"></span>
-                In Progress
+                Public Work
               </span>
             </div>
             <p className="mt-1 font-mono text-sm text-neutral-400">
@@ -30,6 +31,21 @@ const ProjectsSection = () => {
             <span>View projects</span>
             <ArrowUpRight className="h-4 w-4 text-neutral-400" />
           </Link>
+        </div>
+
+        <div className="grid gap-4 pt-6 sm:grid-cols-2">
+          {projects.map((project) => (
+            <Link
+              key={project.id}
+              href={`/projects#${project.id}`}
+              className="rounded-xl border border-white/10 bg-white/[0.02] p-5 transition-colors hover:bg-white/5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+            >
+              <h4 className="mb-2 flex items-center gap-2 text-base font-medium text-white">
+                {project.title} <ArrowUpRight className="h-4 w-4 shrink-0" />
+              </h4>
+              <p className="text-sm leading-relaxed text-neutral-400">{project.description}</p>
+            </Link>
+          ))}
         </div>
 
         <div className="space-y-4 pt-6 text-sm leading-relaxed text-neutral-300 sm:text-base">
@@ -77,7 +93,7 @@ const ProjectsSection = () => {
             </div>
           </div>
           <p className="pt-2 text-xs text-neutral-400 italic sm:text-sm">
-            Projects are currently in development. New projects and repositories will be featured here and on the projects page as they are published.
+            Explore the project collection for source code, live demos, and project details.
           </p>
         </div>
       </div>

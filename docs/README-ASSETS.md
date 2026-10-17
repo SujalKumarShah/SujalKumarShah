@@ -57,3 +57,7 @@ The generators emit only the chart filenames linked by the README and its respon
 The old `/official/opengraphh.jpg` contained the template author's name and artwork and was originally referenced by social metadata. The current metadata points to Sujal's own `/opengraph.png`. The legacy JPEG URL now also serves Sujal's preview, and the legacy placeholder logo is replaced by his local S mark. This prevents cached image URLs from continuing to return someone else's identity.
 
 The visible design-credit link remains attributed to the original designer, with `data-nosnippet` on its text so Google can exclude it from result snippets. Google must recrawl the page and image before older result cards can update. Other search/AI providers may handle snippet controls differently.
+
+## Profile-specific snapshots
+
+The saved activity snapshot records `githubUsername`. The website rejects a fallback snapshot for a different account, and the README updater rejects repository links owned by another user. The updater reads its default endpoint from `public/profile.json`, so changing the deployment URL also updates the refresh source. The initial copied snapshot was replaced with Sujal's verified public data.

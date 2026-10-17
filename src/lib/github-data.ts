@@ -116,3 +116,10 @@ export function mergeSnapshot(
     repositories: next.repositories ?? previous?.repositories ?? null,
   };
 }
+
+// Never use a template author's saved statistics as this profile's fallback.
+export function snapshotBelongsToUser(raw: unknown, username: string): boolean {
+  if (!object(raw) || raw.githubUsername !== username || !object(raw.repositories) || !Array.isArray(raw.repositories.repos)) return false;
+  const prefix = `https://github.com/${username.toLowerCase()}/`;
+  return raw.repositories.repos.every(repo => object(repo) && typeof repo.href === "string" && repo.href.toLowerCase().startsWith(prefix));
+}

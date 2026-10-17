@@ -106,7 +106,7 @@ The production dependency audit reports zero known vulnerabilities. The full aud
 ## Remaining external steps
 
 1. Verify the domain property in Google Search Console, or use the existing `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` setting with your own verification value.
-2. Submit `https://sujalkumarshah.com/sitemap.xml`, inspect the homepage and project URLs, and request indexing after the updated deployment is live.
+2. Submit `https://sujal-kumar-shah.vercel.app/sitemap.xml`, inspect the homepage and project URLs, and request indexing after the updated deployment is live.
 3. Check PageSpeed Insights and Search Console's real-user Core Web Vitals on the deployed site. Monitor indexing and query performance.
 4. Keep your real professional profiles linked to the canonical domain and continue publishing evidence of your work. Your other accounts were not edited.
 

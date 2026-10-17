@@ -13,6 +13,7 @@ const compiled = ts.transpileModule(source, {
   },
 });
 const {
+  snapshotBelongsToUser,
   normalizeCalendar,
   mergeSnapshot,
   contributionRange,
@@ -113,4 +114,13 @@ test("parsing an entire leap year preserves January 1 for rolling ranges", () =>
   const year = parseContributionHTML(html);
   assert.equal(year.length, 366);
   assert.equal(year[0].date, "2024-01-01");
+});
+
+test("saved fallback rejects copied statistics from another GitHub account", () => {
+  const own = { githubUsername: "SujalKumarShah", repositories: { repos: [{ href: "https://github.com/SujalKumarShah/SujalKumarShah" }] } };
+  assert.equal(snapshotBelongsToUser(own, "SujalKumarShah"), true);
+  assert.equal(snapshotBelongsToUser(own, "another-user"), false);
+  assert.equal(snapshotBelongsToUser({ ...own, repositories: { repos: [{ href: "https://github.com/another-user/portfolio" }] } }, "SujalKumarShah"), false);
+  assert.equal(snapshotBelongsToUser({ repositories: own.repositories }, "SujalKumarShah"), false);
+  assert.equal(snapshotBelongsToUser(null, "SujalKumarShah"), false);
 });

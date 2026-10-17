@@ -1,1 +1,55 @@
-[]
+[
+  {
+    "id": "abtalks",
+    "title": "ABTalks 60-Day Challenge",
+    "description": "A mobile-first hackathon platform for daily coding challenges, streak tracking, leaderboards, and sharing proof of work.",
+    "category": "fullstack",
+    "technologies": [
+      "React",
+      "Vite",
+      "Firebase",
+      "CSS"
+    ],
+    "programmingLanguages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "year": "2026",
+    "image": "/projects/abtalks.svg",
+    "coverLines": [
+      "ABTalks",
+      "60-Day Challenge"
+    ],
+    "coverLabel": "HACKATHON / WEB APPLICATION",
+    "github": "SujalKumarShah/Hackathon-ab-talks",
+    "live": "https://hackathon-ab-talks.vercel.app",
+    "credit": "Hackathon project."
+  },
+  {
+    "id": "portfolio",
+    "title": "Developer Portfolio",
+    "description": "This responsive developer portfolio brings together projects, skills, public GitHub activity, and ways to get in touch.",
+    "category": "frontend",
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "programmingLanguages": [
+      "TypeScript",
+      "CSS"
+    ],
+    "year": "2026",
+    "image": "/projects/portfolio.svg",
+    "coverLines": [
+      "Developer",
+      "Portfolio"
+    ],
+    "coverLabel": "NEXT.JS / REACT / TYPESCRIPT",
+    "github": "SujalKumarShah/SujalKumarShah",
+    "live": "https://sujal-kumar-shah.vercel.app",
+    "credit": ""
+  }
+]

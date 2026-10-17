@@ -92,14 +92,14 @@ const ProjectsPage = () => {
                   <FolderGit2 className="h-7 w-7 text-neutral-400" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-white">
-                  Projects In Progress
+                  No projects in this category
                 </h3>
                 <p className="max-w-md text-sm leading-relaxed text-neutral-400">
-                  New projects and implementations are currently in development. Repositories and live demos will be showcased here as they are completed.
+                  Try another category to explore published projects and their source code.
                 </p>
                 <div className="mt-5 flex items-center gap-2 rounded-full border border-amber-500/20 bg-amber-500/10 px-3.5 py-1 text-xs font-medium text-amber-400">
                   <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-amber-400"></span>
-                  Upcoming Work
+                  More work to come
                 </div>
               </div>
             ) : (
