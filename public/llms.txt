@@ -1,0 +1,24 @@
+# Sujal Kumar Shah
+
+> Official personal developer portfolio of Sujal Kumar Shah (@SujalKumarShah). Learning and building with modern web applications, data structures, algorithms, Linux systems, and cloud architecture. Open to internships and collaboration.
+
+The canonical identity is https://sujalkumarshah.com/#person. Exact linked accounts distinguish this person from others with the same name. Public, read-only resources; no sign-in or JavaScript is needed to read the text versions. Dynamic GitHub totals must be read with timestamps and error flags.
+
+## Portfolio and project content
+
+- [Portfolio in Markdown](https://sujalkumarshah.com/index.md): Identity, learning focus, experience context, section links, exact social/coding profiles and email contact. Human page: https://sujalkumarshah.com/
+- [Featured projects in Markdown](https://sujalkumarshah.com/projects.md): Projects in progress, sources and attribution. Human page: https://sujalkumarshah.com/projects
+- [Complete public guide](https://sujalkumarshah.com/llms-full.txt): Self-contained portfolio and project content, activity definitions, freshness, contact behavior and browsing tool reference.
+
+## Structured resources and browsing
+
+- [Public profile JSON](https://sujalkumarshah.com/profile.json): Public identity, topics, availability, exact account links, page anchors and resource map.
+- [Featured projects JSON](https://sujalkumarshah.com/projects.json): Same featured projects as the website, with technologies, repository/demo links and team/coursework attribution.
+- [Live GitHub activity JSON](https://sujalkumarshah.com/api/github-activity): Personal 365-date calendar and separate all-time public default-branch commit rankings. Check per-source fetchedAt and errors; failed data is not zero. Cache windows: 120 seconds.
+- [Browsing task guide](https://sujalkumarshah.com/portfolio.skill.md): How to answer common portfolio questions, navigate, interpret activity and use supported read-only tools.
+- [Agent resource catalog](https://sujalkumarshah.com/.well-known/ai-catalog.json): Discover the public browsing skill.
+
+## Optional
+
+- [Search sitemap](https://sujalkumarshah.com/sitemap.xml): Canonical indexable HTML pages.
+- [Crawl rules](https://sujalkumarshah.com/robots.txt): Wildcard access to public content.

@@ -1,0 +1,18 @@
+{
+  "specVersion": "1.0",
+  "entries": [
+    {
+      "identifier": "urn:air:sujalkumarshah.com:portfolio:read-profile",
+      "displayName": "Read Sujal Kumar Shah's portfolio",
+      "description": "Read public identity, learning and experience context, verified project sources and attribution, exact profile/contact links, section navigation and GitHub activity definitions. Uses public text/JSON resources and read-only WebMCP tools when supported.",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+      "url": "https://sujalkumarshah.com/portfolio.skill.md",
+      "representativeQueries": [
+        "Who is Sujal Kumar Shah, the developer known as SujalKumarShah?",
+        "Which public projects has SujalKumarShah worked on, and where is their source code?",
+        "How can I contact Sujal Kumar Shah about internships or collaboration?",
+        "How should I interpret Sujal Kumar Shah's current GitHub activity and repository rankings?"
+      ]
+    }
+  ]
+}
