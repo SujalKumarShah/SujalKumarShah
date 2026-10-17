@@ -33,3 +33,12 @@ test("README automation has a single daily schedule and duplicate safeguard", as
   assert.doesNotMatch(workflow, /workflow_dispatch:|\n  push:/);
   assert.match(workflow, /update-readme-activity\.mjs --daily/);
 });
+
+test("daily workflow serializes updates and stages only README assets", async () => {
+  const workflow = await readFile(new URL("../.github/workflows/readme-activity.yml", import.meta.url), "utf8");
+  assert.match(workflow, /github.repository == 'SujalKumarShah\/SujalKumarShah'/);
+  assert.match(workflow, /cancel-in-progress: false/);
+  assert.match(workflow, /git add --all -- README.md assets\/readme/);
+  assert.doesNotMatch(workflow, /npm ci|git add -A/);
+  assert.match(workflow, /git push origin HEAD:main/);
+});

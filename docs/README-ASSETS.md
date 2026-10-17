@@ -1,16 +1,16 @@
 # README visuals and activity
 
-The profile README uses the portfolio's charcoal background, white headings, gray ruler borders, compact chips, and green accents. The banner, analytics charts, language cards, link badges, and technology icons are stored in this repository. The README uses local image assets without an external profile-view counter.
+The profile README follows the reference portfolio's charcoal background, white headings, gray ruler borders, compact chips and green accents. All artwork and statistics belong to Sujal Kumar Shah. The live profile-view counter is the only externally served image.
 
 ## Profile layout and view counter
 
-The top contains one compact static banner, a short introduction, and a portfolio link. Toolkit chips use two rows, followed by a project table, the learning focus, GitHub analytics and contact links. Local setup instructions are grouped in an expandable section, with the closing line at the end.
+The section order matches the reference: animated banner, introduction, profile views, technology chips, GitHub Analytics, learning focus, contact links, and closing line. Only verified Sujal profile links are included; no X or Codeforces account is invented. Development and regeneration instructions stay in this document rather than cluttering the profile README.
 
-The gray profile-view badge uses [Hits](https://github.com/silentsoft/hits), keyed to `github.com/SujalKumarShah`, and needs no account token. It counts image/page requests from its installation onward; repeat visits and GitHub's image cache affect this approximate total. It is not an all-time GitHub statistic or a count of unique people. No historical views or artificial starting value are added. This live counter requires an external service; downloading it would freeze the number. The portfolio website is unaffected.
+The view counter uses `hits.sh/github.com/SujalKumarShah`. It counts image requests since installation, not unique visitors or all-time GitHub views. GitHub caching affects its approximate total. It needs no token.
 
-## Static assets
+## Banner animation
 
-`assets/readme/header-static@3x.png` is a **2640 × 630** source displayed at **880 × 210**. The explicit display dimensions keep the banner compact. The old GIF encoded the frames as a single 2640 × 30870 image, producing dozens of repeated banners; it has been removed, along with its generator path. The static banner works without motion or animation support. Every visual has alternative text, and profile destinations are normal clickable links.
+The banner is displayed at **880 × 210** with a **2640 × 630** source per frame. A static PNG is selected for readers who prefer reduced motion. The generator sets `raw.pageHeight` on Sharp's input so each frame is encoded as a GIF page, rather than stacking every frame into one tall image. It verifies the output width, frame height and multiple pages before completing. A regression test also checks the GIF's logical canvas height.
 
 The banner, badges, and technology chips are generated directly by `scripts/generate-readme-assets.mjs` using Sharp and React Icons:
 
@@ -42,9 +42,9 @@ Each displayed percentage is that language's combined source lines divided by **
 
 ### Daily refresh and cost
 
-The workflow in `.github/workflows/readme-activity.yml` is scheduled **once daily at 00:25 UTC (05:55 India time)**. There is no manual or push trigger. GitHub may delay a scheduled job; this is not an exact delivery time. The `--daily` safeguard skips a retry when the calendar, repository counts and language snapshot have all refreshed on the current India date. A failed refresh does not mark that day complete. Earlier extra bot commits came from manual development checks; ordinary code commits are separate from this workflow. The live website refreshes activity independently in two-minute cache windows and does not need a Git commit to update.
+The workflow in `.github/workflows/readme-activity.yml` is scheduled **once daily at 00:25 UTC (05:55 India time)**. There is no manual or push trigger. The job runs only in `SujalKumarShah/SujalKumarShah`, so contribution forks cannot write duplicate snapshots. Runs are serialized and have a ten-minute limit. GitHub may delay a scheduled job; this is not an exact delivery time. The `--daily` safeguard skips a retry when the calendar, repository counts and language snapshot have all refreshed on the current India date. A failed refresh does not mark that day complete. Earlier extra bot commits came from manual development checks; ordinary code commits are separate from this workflow. The live website refreshes activity independently in two-minute cache windows and does not need a Git commit to update.
 
-It uses a pinned official checkout action, standard `ubuntu-latest` runner, Python, Perl, and the repository-scoped automatic GitHub token. No AI service is called and no paid runner is configured. Standard GitHub-hosted runners in public repositories are [currently free](https://docs.github.com/en/billing/concepts/product-billing/github-actions). Private repositories and larger runners have different billing rules. No artifacts or persistent Actions caches are uploaded by this workflow.
+It uses official checkout/runtime actions, the standard `ubuntu-latest` runner, Node.js 22, Python, system Perl, and the repository-scoped automatic GitHub token. Refresh scripts need only standard libraries, so the scheduled job does not install the website dependencies. Only the refresh job receives write access, and only README/assets changes are staged. No AI service is called and no paid runner is configured. Standard GitHub-hosted runners in public repositories are [currently free](https://docs.github.com/en/billing/concepts/product-billing/github-actions). Private repositories and larger runners have different billing rules. No artifacts or persistent Actions caches are uploaded by this workflow.
 
 Updates commit as `github-actions[bot]` with the message `Refresh public GitHub activity`; these are automatic data changes. A run commits only when the generated snapshot changes, and it never force-pushes. There is no push trigger, so a data commit cannot start an update loop. Failed refreshes preserve the previous snapshot. GitHub can delay scheduled runs or disable schedules on inactive repositories.
 
@@ -61,3 +61,9 @@ The visible design-credit link remains attributed to the original designer, with
 ## Profile-specific snapshots
 
 The saved activity snapshot records `githubUsername`. The website rejects a fallback snapshot for a different account, and the README updater rejects repository links owned by another user. The updater reads its default endpoint from `public/profile.json`, so changing the deployment URL also updates the refresh source. The initial copied snapshot was replaced with Sujal's verified public data.
+
+## Checks and local development
+
+Use `npm ci` and `npm run dev` to run the website locally. Before contributing, run `npm test`, `npm run lint`, `npm run typecheck`, and `npm run build`. Profile links and the deployment URL live in `public/profile.json`; project cards use `src/data/projects.json`. After editing either, run `npm run generate:agents` and `node scripts/generate-project-covers.mjs`.
+
+A real README refresh requires the deployed `/api/github-activity` endpoint to return a complete, current India-date snapshot. Stale calendars, mismatched day ranges, partial responses, foreign repository owners and foreign language snapshots are rejected before any README or snapshot file is replaced. The previous successful snapshot remains intact on failure. Scheduled workflows begin on the default branch after merge, and GitHub may delay them; the schedule is 05:55 India time rather than an exact delivery guarantee.
