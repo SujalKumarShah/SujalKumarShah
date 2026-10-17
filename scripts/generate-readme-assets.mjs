@@ -40,34 +40,6 @@ function header(caption) {
 
 await sharp(Buffer.from(header("understand first. build second.")), { density: rasterDensity }).png().toFile(join(output, "header-static@3x.png"));
 
-const captions = ["Linux / systems / shell tooling", "Next.js / React / TypeScript", "Data structures & algorithms"];
-const timeline = [];
-for (const caption of captions) {
-  for (let i = 0; i < caption.length; i += 3) timeline.push(caption.slice(0, i + 3));
-  for (let i = 0; i < 6; i++) timeline.push(caption);
-}
-
-const frameBuffers = await Promise.all(
-  timeline.map((c) =>
-    sharp(Buffer.from(header(c)), { density: rasterDensity })
-      .raw()
-      .toBuffer({ resolveWithObject: true })
-  )
-);
-const { width: frameWidth, height: frameHeight, channels } = frameBuffers[0].info;
-const totalHeight = frameHeight * frameBuffers.length;
-const compositeBuffer = Buffer.concat(frameBuffers.map((b) => b.data));
-
-await sharp(compositeBuffer, {
-  raw: { width: frameWidth, height: totalHeight, channels },
-})
-  .gif({
-    pageHeight: frameHeight,
-    loop: 0,
-    delay: timeline.map(() => 140),
-  })
-  .toFile(join(output, "header@3x.gif"));
-
 const links = [
   ["github", "GITHUB", "FOLLOW", SiGithub],
   ["linkedin", "LINKEDIN", "CONNECT", SiLinkedin],
@@ -96,4 +68,4 @@ for (const [name, label, component] of [
   const width = 43 + label.length * 7.3;
   await writeFile(join(output, `stack-${name}.svg`), `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="32"><rect x=".5" y=".5" width="${width - 1}" height="31" rx="8" fill="#18181b" stroke="#303036"/><g transform="translate(9 7)">${icon(component)}</g><text x="34" y="21" fill="#e4e4e7" font-family="Arial,sans-serif" font-size="12">${label}</text></svg>`);
 }
-console.log(`Created local README visuals and header@3x.gif (${timeline.length} frames).`);
+console.log("Created local README visuals and a compact static banner.");

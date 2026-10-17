@@ -1,16 +1,16 @@
 # README visuals and activity
 
-The profile README uses the portfolio's charcoal background, white headings, gray ruler borders, compact chips, and green accents. The banner, analytics charts, language cards, link badges, and technology icons are stored in this repository. The live profile-view counter is the single externally served image.
+The profile README uses the portfolio's charcoal background, white headings, gray ruler borders, compact chips, and green accents. The banner, analytics charts, language cards, link badges, and technology icons are stored in this repository. The README uses local image assets without an external profile-view counter.
 
 ## Profile layout and view counter
 
-The top contains the existing banner, introduction, view counter and technology chips. GitHub Analytics follows, then the current learning focus. All contact, social and coding-profile links are grouped under **Connect with me** near the bottom. The final closing line uses the profile's “Understand first. Build second.” theme. There are no expandable sections or separate snapshot/update lines in the README.
+The top contains one compact static banner, a short introduction, and a portfolio link. Toolkit chips use two rows, followed by a project table, the learning focus, GitHub analytics and contact links. Local setup instructions are grouped in an expandable section, with the closing line at the end.
 
 The gray profile-view badge uses [Hits](https://github.com/silentsoft/hits), keyed to `github.com/SujalKumarShah`, and needs no account token. It counts image/page requests from its installation onward; repeat visits and GitHub's image cache affect this approximate total. It is not an all-time GitHub statistic or a count of unique people. No historical views or artificial starting value are added. This live counter requires an external service; downloading it would freeze the number. The portfolio website is unaffected.
 
-## Static assets and animation
+## Static assets
 
-`assets/readme/header@3x.gif` is a typing animation rendered at **2640 × 630**, displayed at **880 × 210**. It uses a 256-color palette without downscaling its frames. The 3× source stays sharp on high-density screens while retaining the compact banner height. The name and role remain visible throughout. The README's picture element selects the equally high-resolution `header-static@3x.png` when the reader prefers reduced motion. Every visual has alternative text, and profile destinations are normal clickable links. GitHub can also show a paused/static image depending on its viewer settings.
+`assets/readme/header-static@3x.png` is a **2640 × 630** source displayed at **880 × 210**. The explicit display dimensions keep the banner compact. The old GIF encoded the frames as a single 2640 × 30870 image, producing dozens of repeated banners; it has been removed, along with its generator path. The static banner works without motion or animation support. Every visual has alternative text, and profile destinations are normal clickable links.
 
 The banner, badges, and technology chips are generated directly by `scripts/generate-readme-assets.mjs` using Sharp and React Icons:
 

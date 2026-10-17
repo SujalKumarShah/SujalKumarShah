@@ -1,31 +1,52 @@
 <p align="center">
   <a href="https://sujal-kumar-shah.vercel.app/">
-    <picture>
-      <source media="(prefers-reduced-motion: reduce)" srcset="assets/readme/header-static@3x.png" />
-      <img src="assets/readme/header@3x.gif" width="880" alt="Sujal Kumar Shah — Software Developer &amp; Systems Engineer. Open to internships." />
-    </picture>
+    <img src="assets/readme/header-static@3x.png" width="880" height="210" alt="Sujal Kumar Shah — Software Developer &amp; Systems Engineer. Open to internships." />
   </a>
 </p>
 
-I'm **Sujal Kumar Shah**, a software developer focused on **modern web development**, **data structures & algorithms**, and **Linux systems**. I like understanding how things work, solving problems, and turning what I learn into working projects. Open to **internships and collaboration**.
+<p align="center">
+  Building with <strong>React &amp; Next.js</strong> · Practicing <strong>algorithms</strong> · Exploring <strong>Linux</strong><br />
+  <sub>Open to internships, collaboration, and open-source contributions.</sub>
+</p>
 
 <p align="center">
-  <a href="https://github.com/SujalKumarShah"><img src="https://hits.sh/github.com/SujalKumarShah.svg?label=PROFILE%20VIEWS&amp;color=3f3f46&amp;labelColor=18181b" alt="Profile views — page loads since this counter was added" /></a>
+  <a href="https://sujal-kumar-shah.vercel.app/"><strong>Visit my portfolio ↗</strong></a>
+  &nbsp; · &nbsp;
+  <a href="mailto:sujalks6758@gmail.com">Get in touch</a>
 </p>
+
+## Toolkit
 
 <p align="center">
   <img src="assets/readme/stack-cpp.svg" height="28" alt="C++" />
   <img src="assets/readme/stack-typescript.svg" height="28" alt="TypeScript" />
   <img src="assets/readme/stack-javascript.svg" height="28" alt="JavaScript" />
   <img src="assets/readme/stack-react.svg" height="28" alt="React" />
+</p>
+<p align="center">
   <img src="assets/readme/stack-nextjs.svg" height="28" alt="Next.js" />
   <img src="assets/readme/stack-tailwind.svg" height="28" alt="Tailwind CSS" />
   <img src="assets/readme/stack-linux.svg" height="28" alt="Linux" />
   <img src="assets/readme/stack-git.svg" height="28" alt="Git" />
 </p>
 
+## Selected projects
+
+| Project | What it does | Explore |
+| :--- | :--- | :--- |
+| **ABTalks 60-Day Challenge** | Hackathon app for daily coding challenges, streaks, and proof of work. | [Live ↗](https://hackathon-ab-talks.vercel.app) · [Code](https://github.com/SujalKumarShah/Hackathon-ab-talks) |
+| **Developer Portfolio** | A Next.js home for my projects, skills, and public GitHub activity. | [Live ↗](https://sujal-kumar-shah.vercel.app) · [Code](https://github.com/SujalKumarShah/SujalKumarShah) |
+
+## Currently learning
+
+- **Problem solving:** practicing data structures and algorithms with solutions on GitHub and LeetCode.
+- **Web development:** building responsive interfaces with React, Next.js, TypeScript, and Tailwind CSS, including this portfolio.
+- **Systems fundamentals:** exploring Linux, the command line, operating systems, and how software works beneath the interface.
+
+I value readable code, strong fundamentals, and steady improvement.
+
 <!-- activity:start -->
-### GitHub Analytics
+## GitHub activity
 
 <p align="center">
   <a href="https://github.com/SujalKumarShah">
@@ -46,20 +67,7 @@ I'm **Sujal Kumar Shah**, a software developer focused on **modern web developme
 </p>
 <!-- activity:end -->
 
-### Selected projects
-
-- **[ABTalks 60-Day Challenge](https://hackathon-ab-talks.vercel.app)** — a hackathon web app for coding challenges, streak tracking, and proof of work. [Source](https://github.com/SujalKumarShah/Hackathon-ab-talks).
-- **[Developer Portfolio](https://sujal-kumar-shah.vercel.app)** — this Next.js portfolio with projects and public GitHub activity. [Source](https://github.com/SujalKumarShah/SujalKumarShah).
-
-### What I'm working on
-
-- **Problem solving:** practicing data structures and algorithms with solutions on GitHub and LeetCode.
-- **Web development:** building responsive interfaces with React, Next.js, TypeScript, and Tailwind CSS, including this portfolio.
-- **Systems fundamentals:** exploring Linux, the command line, operating systems, and how software works beneath the interface.
-
-I value readable code, a strong understanding of the fundamentals, and steady improvement. My portfolio brings together my projects, skills, and ways to get in touch.
-
-### Connect with me
+## Connect
 
 <p align="center">
   <a href="https://github.com/SujalKumarShah"><img src="assets/readme/link-github.svg" height="32" alt="GitHub — follow SujalKumarShah" /></a>
@@ -69,12 +77,10 @@ I value readable code, a strong understanding of the fundamentals, and steady im
   <a href="https://www.codechef.com/users/sujalkumarshah"><img src="assets/readme/link-codechef.svg" height="30" alt="CodeChef — view Sujal's profile" /></a>
 </p>
 
----
+<details>
+<summary><strong>Run this portfolio locally</strong></summary>
 
-<p align="center"><strong>Thanks for stopping by.</strong><br />
-<sub>Understand first. Build second. Keep going.</sub></p>
-
-### Run the portfolio locally
+### Development setup
 
 Requires Node.js 22 or later and npm.
 
@@ -90,3 +96,10 @@ Open <http://localhost:3000>. Use `npm run build` and `npm start` for a producti
 Profile links and the deployment URL live in `public/profile.json`; project cards use `src/data/projects.json`. After updating either, run `npm run generate:agents` and `node scripts/generate-project-covers.mjs` to refresh public resources and covers.
 
 The daily workflow refreshes GitHub statistics from the public portfolio endpoint. An optional server-side `GITHUB_TOKEN` increases API limits; never expose it with a `NEXT_PUBLIC_` prefix or commit it. See [README asset documentation](docs/README-ASSETS.md) for statistics scopes and regeneration steps.
+
+</details>
+
+---
+
+<p align="center"><strong>Thanks for stopping by.</strong><br />
+<sub>Understand first. Build second. Keep going.</sub></p>
