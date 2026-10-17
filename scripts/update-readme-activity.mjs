@@ -5,6 +5,7 @@ import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { tmpdir } from "node:os";
 import { activityAssets, activityBlock, snapshotImagePattern } from "./readme-visuals.mjs";
+import { validateActivity, validateLanguages } from "./readme-snapshot.mjs";
 import { refreshedToday } from "./readme-refresh-policy.mjs";
 
 const profile = JSON.parse(await readFile(new URL("../public/profile.json", import.meta.url), "utf8"));
@@ -34,27 +35,10 @@ if (renderOnly) {
   if (!response.ok) throw new Error("Public activity source is unavailable; keeping the previous snapshot.");
   data = await response.json();
 }
-if (!renderOnly && (data.errors?.calendar !== false || data.errors?.repositories !== false))
-  throw new Error("Public activity is incomplete; keeping the previous snapshot.");
-const days = data.calendar?.days;
-const repos = data.repositories?.repos;
-const validDate = (value) => typeof value === "string" && /^\d{4}-\d{2}-\d{2}$/.test(value) && Number.isFinite(Date.parse(value)) && new Date(value).toISOString().slice(0, 10) === value;
-if (!Array.isArray(days) || days.length !== 365 || !Array.isArray(repos))
-  throw new Error("Unexpected activity shape.");
-for (let i = 0; i < days.length; i++) {
-  const day = days[i];
-  if (!validDate(day.date) || !Number.isInteger(day.count) || day.count < 0 || !Number.isInteger(day.level) || day.level < 0 || day.level > 4 || (i && Date.parse(day.date) - Date.parse(days[i - 1].date) !== 86400000))
-    throw new Error("Invalid calendar data.");
-}
-for (let i = 0; i < repos.length; i++) {
-  const repo = repos[i];
-  if (typeof repo.href !== "string" || !repo.href.toLowerCase().startsWith(`https://github.com/${profile.githubUsername.toLowerCase()}/`) || typeof repo.name !== "string" || !/^[\w.-]+$/.test(repo.name) || !Number.isInteger(repo.count) || repo.count < 1 || typeof repo.href !== "string" || !/^https:\/\/github\.com\/[\w.-]+\/[\w.-]+$/.test(repo.href) || (i && repo.count > repos[i - 1].count))
-    throw new Error("Invalid repository ranking.");
-}
-const { from, to } = data.calendar;
-const { fetchedAt } = data.repositories;
-if (data.repositories.scope !== "all-time" || !validDate(from) || !validDate(to) || Date.parse(to) - Date.parse(from) !== 364 * 86400000 || !Number.isFinite(Date.parse(fetchedAt)))
-  throw new Error("Invalid source timestamps.");
+const today = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Kolkata", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+validateActivity(data, profile.githubUsername, { today, allowHistorical: renderOnly });
+const days = data.calendar.days;
+const repos = data.repositories.repos;
 const total = days.reduce((sum, day) => sum + day.count, 0);
 const commits = repos.reduce((sum, repo) => sum + repo.count, 0);
 let languages = data.languages;
@@ -68,8 +52,7 @@ if (!renderOnly) {
     await rm(temporary, { recursive: true, force: true });
   }
 }
-if (!languages?.lines || !Array.isArray(languages.repositories) || languages.scope !== "public-non-fork-default-branches")
-  throw new Error("Invalid source line snapshot");
+validateLanguages(languages, profile.githubUsername);
 const languageRows = Object.entries(languages.lines).sort(([a, ac], [b, bc]) => bc - ac || a.localeCompare(b));
 if (languageRows.some(([, count]) => !Number.isSafeInteger(count) || count < 0)) throw new Error("Invalid code line total");
 const sum = languageRows.reduce((value, [, count]) => value + count, 0);

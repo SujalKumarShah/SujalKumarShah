@@ -23,10 +23,10 @@ export default function NavbarStars() {
       <Tooltip>
         <TooltipTrigger asChild>
           <a
-            href="https://github.com/SujalKumarShah"
+            href="https://github.com/SujalKumarShah/SujalKumarShah"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Sujal Kumar Shah GitHub profile and repository stars"
+            aria-label="Sujal Kumar Shah portfolio repository and stars"
             className="flex items-center gap-2 rounded-md px-3 py-2 transition-colors hover:bg-[#1C1C1F]"
           >
             <GitHubIcon className="h-5 w-5 text-white/60 transition-colors hover:text-white" />

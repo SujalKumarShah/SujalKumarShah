@@ -15,7 +15,7 @@ const ProjectsPage = () => {
     { id: "algorithms", name: "C++ & DSA" },
     { id: "fullstack", name: "Full Stack" },
     { id: "frontend", name: "Frontend" },
-  ];
+  ].filter(category => category.id === "all" || projects.some(project => project.category === category.id));
 
   const filteredProjects =
     selectedCategory === "all"

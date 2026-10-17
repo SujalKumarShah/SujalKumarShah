@@ -2,37 +2,44 @@ name: Refresh README activity
 
 on:
   schedule:
+    # Once daily at 05:55 Asia/Kolkata. GitHub may delay scheduled jobs.
     - cron: '25 0 * * *'
 
 permissions:
-  contents: write
+  contents: read
+
+concurrency:
+  group: readme-activity
+  cancel-in-progress: false
 
 jobs:
   refresh:
+    if: github.repository == 'SujalKumarShah/SujalKumarShah'
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
-
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
-      - name: Install dependencies
-        run: npm ci
-
+      # Refresh scripts use only standard Node/Python libraries and system Perl.
       - name: Update README activity
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/update-readme-activity.mjs --daily
-
-      - name: Commit changes
+      - name: Commit verified activity changes
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git diff --quiet && git diff --staged --quiet || git commit -m "Refresh public GitHub activity"
-          git push
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all -- README.md assets/readme
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh public GitHub activity"
+            git push origin HEAD:main
+          fi
