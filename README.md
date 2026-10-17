@@ -14,6 +14,7 @@ I'm **Sujal Kumar Shah**, a software developer focused on **modern web developme
 </p>
 
 <p align="center">
+  <img src="assets/readme/stack-cpp.svg" height="28" alt="C++" />
   <img src="assets/readme/stack-typescript.svg" height="28" alt="TypeScript" />
   <img src="assets/readme/stack-javascript.svg" height="28" alt="JavaScript" />
   <img src="assets/readme/stack-react.svg" height="28" alt="React" />
@@ -22,6 +23,28 @@ I'm **Sujal Kumar Shah**, a software developer focused on **modern web developme
   <img src="assets/readme/stack-linux.svg" height="28" alt="Linux" />
   <img src="assets/readme/stack-git.svg" height="28" alt="Git" />
 </p>
+
+<!-- activity:start -->
+### GitHub Analytics
+
+<p align="center">
+  <a href="https://github.com/SujalKumarShah">
+    <picture>
+      <source media="(max-width: 600px)" srcset="assets/readme/activity-compact-b0c02a7faa99.svg" />
+      <img src="assets/readme/activity-761c7a8d5c2f.svg" width="880" alt="405 profile contributions of all types and 66 active days in the past year. Separately, 331 all-time commits in owned public repositories. Monthly contribution chart." />
+    </picture>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/SujalKumarShah?tab=repositories">
+    <picture>
+      <source media="(max-width: 600px)" srcset="assets/readme/languages-compact-8a6e91a2085e.svg" />
+      <img src="assets/readme/languages-f70d8b67afcd.svg" width="880" alt="Combined public repository language percentages by source lines: JavaScript 30.4%, CSS 23.4%, HTML 16.2%, TypeScript 14.3%, C++ 8.1%, Python 7.6%" />
+    </picture>
+  </a>
+</p>
+<!-- activity:end -->
 
 ### What I'm working on
 
