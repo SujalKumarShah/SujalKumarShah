@@ -30,8 +30,8 @@ I'm **Sujal Kumar Shah**, a software developer focused on **C++ & algorithms**, 
 <p align="center">
   <a href="https://github.com/SujalKumarShah">
     <picture>
-      <source media="(max-width: 600px)" srcset="assets/readme/activity-compact-1d2ab4e5585b.svg" />
-      <img src="assets/readme/activity-bda26ccd3ce8.svg" width="880" alt="16 profile contributions of all types and 5 active days in the past year. Separately, 29 all-time commits in owned public repositories. Monthly contribution chart." />
+      <source media="(max-width: 600px)" srcset="assets/readme/activity-compact-4c295e37fce5.svg" />
+      <img src="assets/readme/activity-6a2472748213.svg" width="880" alt="17 profile contributions of all types and 5 active days in the past year. Separately, 31 all-time commits in owned public repositories. Monthly contribution chart." />
     </picture>
   </a>
 </p>
@@ -39,8 +39,8 @@ I'm **Sujal Kumar Shah**, a software developer focused on **C++ & algorithms**, 
 <p align="center">
   <a href="https://github.com/SujalKumarShah?tab=repositories">
     <picture>
-      <source media="(max-width: 600px)" srcset="assets/readme/languages-compact-08550618e0f9.svg" />
-      <img src="assets/readme/languages-cb07868f4974.svg" width="880" alt="Combined public repository language percentages by source lines: JavaScript 49.4%, TypeScript 40.1%, CSS 8.6%, Python 1.7%, HTML 0.2%" />
+      <source media="(max-width: 600px)" srcset="assets/readme/languages-compact-a59aa15dd97b.svg" />
+      <img src="assets/readme/languages-90eb2153a914.svg" width="880" alt="Combined public repository language percentages by source lines: JavaScript 50.1%, TypeScript 39.6%, CSS 8.5%, Python 1.7%, HTML 0.2%" />
     </picture>
   </a>
 </p>
