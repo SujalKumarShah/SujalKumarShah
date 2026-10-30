@@ -30,8 +30,8 @@ I'm **Sujal Kumar Shah**, a software developer focused on **C++ & algorithms**, 
 <p align="center">
   <a href="https://github.com/SujalKumarShah">
     <picture>
-      <source media="(max-width: 600px)" srcset="assets/readme/activity-compact-f0c0ad1e6cb8.svg" />
-      <img src="assets/readme/activity-1b524570fcd8.svg" width="880" alt="17 profile contributions of all types and 5 active days in the past year. Separately, 41 all-time commits in owned public repositories. Monthly contribution chart." />
+      <source media="(max-width: 600px)" srcset="assets/readme/activity-compact-fe1d6df9d700.svg" />
+      <img src="assets/readme/activity-1bb54c706cf6.svg" width="880" alt="17 profile contributions of all types and 5 active days in the past year. Separately, 42 all-time commits in owned public repositories. Monthly contribution chart." />
     </picture>
   </a>
 </p>
